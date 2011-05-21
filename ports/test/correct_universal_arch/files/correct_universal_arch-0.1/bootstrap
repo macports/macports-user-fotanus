@@ -1,0 +1,7 @@
+#!/bin/sh
+
+aclocal && \
+    autoheader && \
+        glibtoolize --automake --copy --force && \
+		autoconf && \
+	    automake --add-missing --copy

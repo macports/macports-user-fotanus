@@ -1,0 +1,28 @@
+absolute_path_in_destroot 335
+portdir test/absolute_path_in_destroot description absolute_path_in_destroot homepage www.fotanus.com epoch 0 platforms darwin name absolute_path_in_destroot license unknown maintainers {fotanus gmail.com:fotanus} long_description {Has a link that points absolutely for something in of destroot} version 0.1 categories test revision 0
+absolute_path_out_of_destroot 348
+portdir test/absolute_path_out_of_destroot description absolute_path_out_of_destroot homepage www.fotanus.com epoch 0 platforms darwin name absolute_path_out_of_destroot license unknown maintainers {fotanus gmail.com:fotanus} long_description {Has a link that points relatively for something out of destroot} version 0.1 categories test revision 0
+correct_arch 287
+variants universal portdir test/correct_arch description correct_arch homepage www.fotanus.com epoch 0 platforms darwin name correct_arch license unknown maintainers {fotanus gmail.com:fotanus} long_description {install binary with correct arches} categories test version 0.1 revision 0
+correct_universal_arch 327
+variants universal portdir test/correct_universal_arch description correct_universal_arch homepage www.fotanus.com epoch 0 platforms darwin name correct_universal_arch long_description {install universal binary with correct arches} license unknown maintainers {fotanus gmail.com:fotanus} categories test version 0.1 revision 0
+dep_lib 243
+portdir test/dep_lib description dep_lib homepage www.fotanus.com epoch 0 platforms darwin name dep_lib license unknown maintainers {fotanus gmail.com:fotanus} long_description {Dummy dependency library} version 0.1 categories test revision 0
+lib_dependency 298
+portdir test/lib_dependency description lib_dependency homepage www.fotanus.com epoch 0 platforms darwin name lib_dependency depends_lib port:dep_lib license unknown maintainers {fotanus gmail.com:fotanus} long_description {This program depends from dep_lib} categories test version 0.1 revision 0
+lib_not_dependency 312
+portdir test/lib_not_dependency description lib_not_dependency homepage www.fotanus.com epoch 0 platforms darwin name lib_not_dependency license unknown maintainers {fotanus gmail.com:fotanus} long_description {This library depends form dep_lib but its not on depends_lib} version 0.1 categories test revision 0
+mtree_violation_expected 321
+portdir test/mtree_violation_expected description mtree_violation_expected homepage www.fotanus.com epoch 0 platforms darwin name mtree_violation_expected license unknown maintainers {fotanus gmail.com:fotanus} long_description {Violates port filesystem with mtree_violation check} version 0.1 categories test revision 0
+mtree_violation_unexpected 330
+portdir test/mtree_violation_unexpected description mtree_violation_unexpected homepage www.fotanus.com epoch 0 platforms darwin name mtree_violation_unexpected license unknown maintainers {fotanus gmail.com:fotanus} long_description {Violates port filesystem without mtree_violation check} version 0.1 categories test revision 0
+relative_path_in_destroot 335
+portdir test/relative_path_in_destroot description relative_path_in_destroot homepage www.fotanus.com epoch 0 platforms darwin name relative_path_in_destroot license unknown maintainers {fotanus gmail.com:fotanus} long_description {Has a link that points relatively for something in of destroot} version 0.1 categories test revision 0
+relative_path_out_of_destroot 348
+portdir test/relative_path_out_of_destroot description relative_path_out_of_destroot homepage www.fotanus.com epoch 0 platforms darwin name relative_path_out_of_destroot license unknown maintainers {fotanus gmail.com:fotanus} long_description {Has a link that points absolutely for something out of destroot} version 0.1 categories test revision 0
+unused_depends 316
+portdir test/unused_depends description unused_depends homepage www.fotanus.com epoch 0 platforms darwin name unused_depends depends_lib port:dep_lib license unknown maintainers {fotanus gmail.com:fotanus} long_description {This program depends from dep_lib and dont uses it.} categories test version 0.1 revision 0
+wrong_arch 260
+portdir test/wrong_arch description wrong_arch homepage www.fotanus.com epoch 0 platforms darwin name wrong_arch license unknown maintainers {fotanus gmail.com:fotanus} long_description {install binary with wrong arches} version 0.1 categories test revision 0
+wrong_universal_arch 309
+variants universal portdir test/wrong_universal_arch description wrong_universal_arch homepage www.fotanus.com epoch 0 platforms darwin name wrong_universal_arch long_description {install binary with wrong arches} license unknown maintainers {fotanus gmail.com:fotanus} categories test version 0.1 revision 0

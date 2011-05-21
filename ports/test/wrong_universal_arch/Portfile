@@ -1,0 +1,30 @@
+#-*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# $Id$
+
+PortSystem          1.0
+
+name                wrong_universal_arch
+version             0.1
+categories          test
+platforms           darwin
+maintainers         fotanus \
+                    gmail.com:fotanus
+description         wrong_universal_arch
+long_description    install binary with wrong arches
+homepage            www.fotanus.com
+master_sites        www.fotanus.com
+distfiles           ${name}-${version}.tgz
+
+extract.suffix      .tgz
+use_configure no
+
+fetch {
+	file delete ${prefix}/var/macports/distfiles/wrong_universal_arch/${distfiles}
+	file copy ${portpath}/files/${distfiles} ${prefix}/var/macports/distfiles/${name}
+}
+checksum {}
+patch {}
+destroot {
+	file copy ${worksrcpath}/wrong_universal_arch ${destroot}${prefix}/bin/
+}
+variant universal description (universal binaries) {}

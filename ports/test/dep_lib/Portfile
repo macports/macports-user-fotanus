@@ -1,0 +1,32 @@
+#-*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# $Id$
+
+PortSystem          1.0
+
+name                dep_lib
+version             0.1
+categories          test
+platforms           darwin
+maintainers         fotanus \
+                    gmail.com:fotanus
+description         dep_lib
+long_description    Dummy dependency library
+homepage            www.fotanus.com
+master_sites	    www.fotanus.com
+distfiles	${name}-${version}.tgz
+
+use_configure no
+extract.suffix	.tgz
+
+fetch {
+	file delete ${prefix}/var/macports/distfiles/dep_lib/${distfiles}
+	file copy ${portpath}/files/${distfiles} ${prefix}/var/macports/distfiles/${name}
+}
+checksum {}
+patch {}
+destroot {
+	file mkdir ${destroot}${prefix}/lib
+	file mkdir ${destroot}${prefix}/include
+	file copy ${build.dir}/libdep.so ${destroot}${prefix}/lib
+	file copy ${build.dir}/dep_lib.h ${destroot}${prefix}/include
+}

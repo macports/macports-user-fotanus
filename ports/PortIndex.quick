@@ -1,0 +1,14 @@
+absolute_path_in_destroot 0
+absolute_path_out_of_destroot 365
+correct_arch 747
+correct_universal_arch 1051
+dep_lib 1405
+lib_dependency 1660
+lib_not_dependency 1977
+mtree_violation_expected 2312
+mtree_violation_unexpected 2662
+relative_path_in_destroot 3023
+relative_path_out_of_destroot 3388
+unused_depends 3770
+wrong_arch 4105
+wrong_universal_arch 4380
