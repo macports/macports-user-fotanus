@@ -22,5 +22,5 @@ patch {}
 build {}
 destroot {
 	file mkdir ${destroot}${prefix}/bin
-	ln -s ../etc ${destroot}${prefix}/bin/relative_path_out_of_destroot_link
+	ln -s ../../etc ${destroot}${prefix}/bin/relative_path_out_of_destroot_link
 }
