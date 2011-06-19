@@ -25,6 +25,7 @@ fetch {
 checksum {}
 patch {}
 destroot {
+	file mkdir ${destroot}${prefix}/bin/
 	file copy ${worksrcpath}/wrong_universal_arch ${destroot}${prefix}/bin/
 }
 variant universal description (universal binaries) {}

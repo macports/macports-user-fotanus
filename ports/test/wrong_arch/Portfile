@@ -25,5 +25,6 @@ fetch {
 checksum {}
 patch {}
 destroot {
+	file mkdir ${destroot}${prefix}/bin/
 	file copy ${worksrcpath}/wrong_arch ${destroot}${prefix}/bin/
 }
